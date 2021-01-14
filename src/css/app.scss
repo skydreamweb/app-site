@@ -1,0 +1,10 @@
+// app global css in SCSS form
+html {
+    scroll-behavior: smooth;
+  }
+
+  .only-large-screen {
+    @media only screen and (max-width: 988px) {
+      display: none;
+    }
+  }
