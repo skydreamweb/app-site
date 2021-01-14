@@ -9,7 +9,7 @@
       color="secondary"
       icon="circle"
       size="20px"
-      href="/about#pricing"
+      @click="goToPricing"
       label="Pricing"
     />
     <div class="card_row">
@@ -124,9 +124,22 @@ import Pricing from "../components/Pricing";
 import Subscribe from "../components/Subscribe";
 export default {
   name: "about",
+  data() {
+    return { hash: "" };
+  },
   components: {
     Pricing,
     Subscribe
+  },
+  methods: {
+    goToPricing() {
+      this.$router.push({ hash: this.hash });
+      this.hash = "#pricing";
+      if (this.$router.history.current.hash !== "#pricing") {
+        this.$router.push({ hash: this.hash });
+      }
+      this.hash = "";
+    }
   }
 };
 </script>
