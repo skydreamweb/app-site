@@ -14,6 +14,7 @@
           <form action="insert.php" method="post">
             <input
               type="text"
+              email
               placeholder="Your name"
               outlined
               name="name"
