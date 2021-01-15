@@ -19,12 +19,19 @@
         <q-tabs align="center">
           <q-route-tab to="/" dense label="Home" class="q-mx-sm" />
           <q-route-tab
+            exact
             to="/product"
             dense
             label="The Product"
             class="q-mx-sm"
           />
-          <q-route-tab to="/contact" dense label="Contact" class="q-mx-sm" />
+          <q-route-tab
+            exact
+            to="/contact"
+            dense
+            label="Contact"
+            class="q-mx-sm"
+          />
         </q-tabs>
       </q-toolbar>
     </q-header>

@@ -4,24 +4,26 @@
   >
     <div class="text-h5">
       <h3>
-        Thank you for signing up. You will be among the first to test our beta
-        version of the software and app. <br />
-        We will keep you tuned
+        Thank you for writing to us! <br />
+        We will make sure to write back very soon.
       </h3>
     </div>
     <q-btn
-      to="/contact"
+      to="/"
       class="qbtn"
       color="secondary"
-      icon="email"
+      icon="home"
       size="20px"
-      label="Contact Us"
+      label="Home"
+      exact
     />
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "Mail"
+};
 </script>
 
 <style scoped>

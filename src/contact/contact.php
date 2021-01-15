@@ -5,7 +5,7 @@
       $mailFrom  = strip_tags(htmlspecialchars($_POST["email"]));
       $subject = "Mail from ".$fullName ; 
 
-      $mailTo = 'info@skydream.info' ; 
+      $mailTo = 'dalibor@thesocialformula.net' ; 
 
       $headers = "From: ".$fullName."<".$mailFrom.">"."\r\n" ; 
 
@@ -13,9 +13,7 @@
                <h4>Mail</h4><p>".$mailFrom."</p>" ;
 
       if (mail($mailTo, $subject, $body, $headers)) {
-           
-        var_dump(http_response_code(200));
-        echo json_encode("ok") ;
+        header("refresh:1; url=/mail");
 
       } else { 
            var_dump(http_response_code(503));

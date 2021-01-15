@@ -19,10 +19,11 @@
         </p>
         <div class="w-form">
           <form
-            action="../contact/contact.php"
+            action="contact.php"
             id="email-form-4"
             name="email-form-4"
             data-name="Email Form 4"
+            method="POST"
           >
             <label for="name-3" class="contact-lable">Name</label
             ><input

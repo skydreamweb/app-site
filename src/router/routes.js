@@ -4,7 +4,7 @@ const routes = [
     component: () => import("layouts/MainLayout.vue"),
     children: [
       {
-        path: "",
+        path: "/",
         component: () => import("pages/Index.vue")
       },
       {
@@ -18,6 +18,10 @@ const routes = [
       {
         path: "/subscribed",
         component: () => import("pages/Subscribed.vue")
+      },
+      {
+        path: "/mail",
+        component: () => import("pages/Mail.vue")
       }
     ]
   },
